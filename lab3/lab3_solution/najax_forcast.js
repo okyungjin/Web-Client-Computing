@@ -3,7 +3,7 @@
 let najax = $ = require('najax');
 let apiURI = 'http://api.openweathermap.org/data/2.5/weather?q=Seoul&units=metric&lang=kr&appid=1df33c019687c7318e4a15c63611ee78';
 $.get({
-            url: apiURI,
+            url: apiURI, 
             dataType: 'json',
             success: function(res) {
 				console.log('-----------------------------');
