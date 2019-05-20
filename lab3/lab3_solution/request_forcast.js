@@ -7,7 +7,7 @@ let apiURI = 'http://api.openweathermap.org/data/2.5/forecast?q=Busan&units=metr
 request(apiURI, function(err, res, body) {
     if(err)
         console.log(err);
-    else {
+    else { 
         res = JSON.parse(body);
         for(let i = 0; i < res.cnt; i++) {
             let date = moment.unix(res.list[i].dt)
