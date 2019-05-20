@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animate</title>
+    <style>
+        .box {
+            /* 크기 */
+            width: 100px;
+            height: 100px;
+            /* 색상 */
+            background-color: red;
+            /* 위치 */
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+        // 웹 페이지를 모두 불러오면
+        $(document).ready(function () {
+            // .box 태그를 클릭해서
+            $('.box').click(function () {
+                // 1초 동안 left를 1000픽셀로 변경합니다.
+                $(this).animate({
+                    left: 400
+                }, 3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

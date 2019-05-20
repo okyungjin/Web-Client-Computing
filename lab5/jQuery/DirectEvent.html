@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Event</title>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+        // 웹 페이지를 모두 불러오면
+        $(document).ready(function () {
+            // h1 태그에 click 이벤트를 연결합니다.
+            $('h1').on('click', function (event) {
+                // 이벤트를 발생시킨 문서 객체의 문자를 추출합니다.
+                var text = $(this).text();
+                // 출력합니다.
+                alert(text);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Header_1</h1>
+    <h1>Header_2</h1>
+</body>
+</html>
