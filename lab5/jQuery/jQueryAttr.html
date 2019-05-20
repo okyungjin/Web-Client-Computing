@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Attribute</title>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+        // 웹 페이지를 모두 불러오면
+        $(document).ready(function () {
+            // img 태그에
+            $('img').each(function (index, element) {
+                // src 속성을 조작합니다.
+                $(this).attr('src', 'http://placehold.it/' + (index + 1) * 99 + 'x99');
+            });
+        });
+    </script>
+</head>
+<body>
+    <img />
+    <img />
+    <img />
+</body>
+</html>
