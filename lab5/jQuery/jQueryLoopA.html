@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Event</title>
+    <script src="jquery-3.1.0.js"></script>
+    <script>
+        // 웹 페이지를 모두 불러오면
+        $(document).ready(function () {
+            // h1 태그를 모두 추출하고
+            var $headers = $('h1');
+            // h1 태그의 개수만큼 반복을 돌려서
+            for (var i = 0; i < $headers.length; i++) {
+                // 특정 위치에서
+                if (i % 2 == 1) {
+                    // i번째 요소를 추출해
+                    var domElement = $headers.get(i);
+                    // 배경 색상을 적용합니다.
+                    $(domElement).css('backgroundColor', 'red');
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>HeaderA</h1>
+    <h1>HeaderB</h1>
+    <h1>HeaderC</h1>
+    <h1>HeaderD</h1>
+</body>
+</html>
+
+
+
+<script>
+    $(document).ready(function () {
+        let $headers = $('h1');
+        for (let i=0; i<$headers.length; i++) {
+            if (i % 2 == 0) {
+                let domElement = $headers.get(i);
+                $(domElement).css('backgroundColr', 'red');
+            }
+        }
+    });
+</script>
